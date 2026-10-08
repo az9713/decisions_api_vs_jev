@@ -4,9 +4,17 @@ Two animated tests make model decisions visible: a paired mail-routing benchmark
 
 ![Garden Post Office after a live paired benchmark](public/assets/postoffice-preview.png)
 
-**[Run locally](#run-locally)** · **[Garden Post Office](http://127.0.0.1:3087/)** · **[Meet Maple](http://127.0.0.1:3087/maple.html)**
+**[Watch the video](https://az9713.github.io/decisions_api_vs_jev/)** · **[Run locally](#run-locally)** · **[Garden Post Office](http://127.0.0.1:3087/)** · **[Meet Maple](http://127.0.0.1:3087/maple.html)**
 
-The local links work after you start the server. GitHub README pages cannot execute JavaScript, access a microphone, or run these games. The screenshot is a preview; the browser app is playable. An externally accessible version would need a separately deployed backend for credentials and API calls.
+The local links work after you start the server. GitHub README pages cannot execute the games or embed a native video player. The clickable video preview below opens the hosted GitHub Pages player; no local server is needed to watch it. Live API tests still require the local backend.
+
+## Watch Maple react
+
+[![Play the Maple demo recording](docs/video/demo1-poster.jpg)](https://az9713.github.io/decisions_api_vs_jev/)
+
+**[Play the 44-second demo](https://az9713.github.io/decisions_api_vs_jev/)** · [Direct MP4](https://az9713.github.io/decisions_api_vs_jev/video/demo1.mp4)
+
+The recording is compressed from 38.9 MB to 1.27 MB (96.7% smaller), retaining 1920×866 resolution, 30 fps and audio. The original recording remains local; the compressed copy is committed under `docs/video/demo1.mp4`. GitHub Pages publishes the `docs/` folder. Playback and seeking are checked with `node tests/video-browser.mjs`; pass the hosted page URL to test the deployment. This check requires Playwright and installed Google Chrome.
 
 ## 1. Garden Post Office: Jev versus Decisions
 
