@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+node_modules/
+test-results/
+playwright-report/
+data/
+*.log
+
+# Local source material and raw validation evidence
+evidence/
+concepts/
+transcript.txt
+README.txt
